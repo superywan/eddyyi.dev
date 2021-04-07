@@ -3,16 +3,6 @@ const toggle = document.querySelector(".toggle");
 const theme = document.querySelector("#theme-link");
 const themeEmoji = document.querySelector(".toggle__img");
 
-toggle.addEventListener("click", (e) => {
-  if (theme.getAttribute("href") === "./styles/light-theme.css") {
-    theme.href = "./styles/dark-theme.css";
-    themeEmoji.src = "./img/emojis/new-moon-face_1f31a.png";
-  } else {
-    theme.href = "/styles/light-theme.css";
-    themeEmoji.src = "./img/emojis/full-moon-face_1f31d.png";
-  }
-});
-
 // Set theme by user's local time
 window.addEventListener("load", (e) => {
   const currentDate = new Date();
@@ -23,6 +13,16 @@ window.addEventListener("load", (e) => {
   } else {
     theme.href = "./styles/dark-theme.css";
     themeEmoji.src = "./img/emojis/new-moon-face_1f31a.png";
+  }
+});
+
+toggle.addEventListener("click", (e) => {
+  if (theme.getAttribute("href") === "./styles/light-theme.css") {
+    theme.href = "./styles/dark-theme.css";
+    themeEmoji.src = "./img/emojis/new-moon-face_1f31a.png";
+  } else {
+    theme.href = "./styles/light-theme.css";
+    themeEmoji.src = "./img/emojis/full-moon-face_1f31d.png";
   }
 });
 
