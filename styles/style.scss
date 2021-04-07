@@ -123,8 +123,10 @@ a:hover {
 }
 
 .section {
-  margin-right: 100px;
-  padding: 100px 170px;
+  width: 80%;
+  margin: auto;
+  // margin-right: 100px;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   &__title {
@@ -243,10 +245,13 @@ a:hover {
     }
   }
   &__links {
-    margin-right: 5rem;
+    width: 28.125rem;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
+    margin-right: 5rem;
+
     &--highlight {
-      margin-right: 3rem;
       text-decoration: none;
     }
   }
@@ -261,4 +266,12 @@ a:hover {
 .fade-in.appear {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1240px) {
+  .project {
+    img {
+      width: 350px;
+    }
+  }
 }

@@ -7,7 +7,7 @@ const themeEmoji = document.querySelector(".toggle__img");
 window.addEventListener("load", (e) => {
   const currentDate = new Date();
   const onlyTime = currentDate.getHours();
-  if (onlyTime > 8 && onlyTime < 17) {
+  if (onlyTime > 8 && onlyTime < 18) {
     theme.href = "./styles/light-theme.css";
     themeEmoji.src = "./img/emojis/full-moon-face_1f31d.png";
   } else {
