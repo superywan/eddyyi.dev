@@ -4,12 +4,12 @@ const theme = document.querySelector("#theme-link");
 const themeEmoji = document.querySelector(".toggle__img");
 
 toggle.addEventListener("click", (e) => {
-  if (theme.getAttribute("href") === "/styles/light-theme.css") {
-    theme.href = "/styles/dark-theme.css";
-    themeEmoji.src = "/img/emojis/new-moon-face_1f31a.png";
+  if (theme.getAttribute("href") === "./styles/light-theme.css") {
+    theme.href = "./styles/dark-theme.css";
+    themeEmoji.src = "./img/emojis/new-moon-face_1f31a.png";
   } else {
     theme.href = "/styles/light-theme.css";
-    themeEmoji.src = "/img/emojis/full-moon-face_1f31d.png";
+    themeEmoji.src = "./img/emojis/full-moon-face_1f31d.png";
   }
 });
 
@@ -18,11 +18,11 @@ window.addEventListener("load", (e) => {
   const currentDate = new Date();
   const onlyTime = currentDate.getHours();
   if (onlyTime > 8 && onlyTime < 17) {
-    theme.href = "/styles/light-theme.css";
-    themeEmoji.src = "/img/emojis/full-moon-face_1f31d.png";
+    theme.href = "./styles/light-theme.css";
+    themeEmoji.src = "./img/emojis/full-moon-face_1f31d.png";
   } else {
-    theme.href = "/styles/dark-theme.css";
-    themeEmoji.src = "/img/emojis/new-moon-face_1f31a.png";
+    theme.href = "./styles/dark-theme.css";
+    themeEmoji.src = "./img/emojis/new-moon-face_1f31a.png";
   }
 });
 
