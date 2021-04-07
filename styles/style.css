@@ -15,13 +15,13 @@ a:hover {
 
 .toggle {
   position: absolute;
-  top: 20px;
-  right: 2%;
+  top: 1.875em;
+  right: 3em;
   cursor: pointer;
 }
 
 .toggle__img {
-  width: 3rem;
+  width: 3.25em;
   height: auto;
 }
 
@@ -29,8 +29,8 @@ a:hover {
   width: 150px;
   height: 90px;
   position: fixed;
-  bottom: 14%;
-  right: 0%;
+  bottom: 6.25em;
+  right: 3.125em;
   cursor: pointer;
 }
 
@@ -43,8 +43,17 @@ a:hover {
           animation-iteration-count: infinite;
 }
 
+#top-button:touch-action {
+  aniamtion-name: Bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 #top-button .emoji {
-  width: 3rem;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  width: 3em;
 }
 
 @-webkit-keyframes Bounce {
@@ -100,6 +109,7 @@ a:hover {
 }
 
 .intro {
+  font-size: 1em;
   padding: 0 100px 0;
   max-width: 1440px;
   height: 100vh;
@@ -123,14 +133,14 @@ a:hover {
 }
 
 .intro__title {
-  font-size: 6.25rem;
+  font-size: 6.25em;
   font-weight: 400;
   margin-bottom: -10px;
   margin-top: 0;
 }
 
 .intro__description {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: 400;
   margin: 0;
   margin-bottom: 10px;
@@ -141,17 +151,17 @@ a:hover {
 }
 
 .intro__description .emoji {
-  width: 2.5rem;
+  width: 1em;
 }
 
 .intro__link {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 400;
   margin: 0;
 }
 
 .intro__link .emoji {
-  width: 1.25rem;
+  width: 1em;
   height: auto;
 }
 
@@ -174,9 +184,10 @@ a:hover {
 }
 
 .section {
+  font-size: 1em;
   width: 80%;
   margin: auto;
-  padding: 100px 0;
+  padding: 6.25em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,12 +197,11 @@ a:hover {
 }
 
 .section__title {
-  font-size: 1rem;
   font-weight: 700;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 100px;
-  margin-right: 40px;
+  width: 6.25em;
+  margin-right: 2.5em;
 }
 
 .section__content {
@@ -206,14 +216,13 @@ a:hover {
 }
 
 .skills {
+  font-size: 1em;
   font-weight: 300;
-  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .skills__category--label {
@@ -228,16 +237,16 @@ a:hover {
 }
 
 .skills__category ul li {
-  line-height: 2rem;
+  line-height: 2em;
 }
 
 .resume {
-  font-size: 0.875rem;
+  font-size: 0.875em;
   margin-top: 10px;
 }
 
 .resume .emoji {
-  width: 0.875rem;
+  width: 1em;
 }
 
 .project {
@@ -253,7 +262,7 @@ a:hover {
 }
 
 .project__picture img {
-  width: 500px;
+  width: 31.25em;
   height: auto;
 }
 
@@ -267,6 +276,7 @@ a:hover {
 }
 
 .more-projects {
+  font-size: 1em;
   margin-bottom: 150px;
 }
 
@@ -300,7 +310,7 @@ a:hover {
 
 .more-projects .sub-project__tags--tag {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75em;
   margin-right: 10px;
   padding: 3px 10px;
   border-radius: 10px;
@@ -319,24 +329,24 @@ a:hover {
 }
 
 .footer__copyright {
-  margin-left: 5rem;
+  margin-left: 80px;
   margin-bottom: 30px;
 }
 
 .footer__copyright .emoji {
-  width: 1rem;
+  width: 1em;
 }
 
 .footer__links {
-  width: 28.125rem;
+  width: 28.125em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
-  margin-right: 5rem;
+  margin-bottom: 1.875em;
+  margin-right: 5em;
 }
 
 .footer__links--highlight {
@@ -359,9 +369,18 @@ a:hover {
           transform: translateY(0);
 }
 
-@media screen and (max-width: 1240px) {
-  .project img {
-    width: 350px;
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+  #top-button {
+    right: -2.125em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
