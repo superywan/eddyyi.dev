@@ -1,0 +1,3 @@
+✅  #1 set theme by local time (night = dark, daytime = light)
+✅  #2 make top button function with js, not link
+    #3 responsive css (media queries)

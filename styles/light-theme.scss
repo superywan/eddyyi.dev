@@ -1,0 +1,19 @@
+$light-background: #fff;
+$light-font: #000;
+body {
+  color: $light-font;
+  background: $light-background;
+}
+
+a {
+  color: $light-font;
+}
+
+.sub-project {
+  &__tags {
+    &--tag {
+      color: rgb(0, 96, 192);
+      border: 2px solid rgb(0, 96, 192);
+    }
+  }
+}

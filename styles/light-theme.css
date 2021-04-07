@@ -1,0 +1,14 @@
+body {
+  color: #000;
+  background: #fff;
+}
+
+a {
+  color: #000;
+}
+
+.sub-project__tags--tag {
+  color: #0060c0;
+  border: 2px solid #0060c0;
+}
+/*# sourceMappingURL=light-theme.css.map */

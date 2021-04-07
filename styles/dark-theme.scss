@@ -1,0 +1,19 @@
+$dark-background: #000;
+$dark-font: #fff;
+body {
+  color: $dark-font;
+  background: $dark-background;
+}
+
+a {
+  color: $dark-font;
+}
+
+.sub-project {
+  &__tags {
+    &--tag {
+      color: rgb(92, 139, 185);
+      border: 2px solid rgb(92, 139, 185);
+    }
+  }
+}
