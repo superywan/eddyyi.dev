@@ -44,7 +44,8 @@ a:hover {
 }
 
 #top-button:touch-action {
-  aniamtion-name: Bounce;
+  -webkit-animation-name: Bounce;
+          animation-name: Bounce;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
@@ -54,44 +55,6 @@ a:hover {
   margin: auto;
   padding-top: 20px;
   width: 3em;
-}
-
-@-webkit-keyframes Bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  30% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes Bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  30% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
 }
 
 .show {
@@ -110,9 +73,8 @@ a:hover {
 
 .intro {
   font-size: 1em;
-  padding: 0 100px 0;
   max-width: 1440px;
-  height: 100vh;
+  height: 92vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,8 +86,8 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  -webkit-animation-name: SlideInOnLoad;
-          animation-name: SlideInOnLoad;
+  -webkit-animation-name: SlideIn;
+          animation-name: SlideIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
@@ -165,22 +127,13 @@ a:hover {
   height: auto;
 }
 
-@-webkit-keyframes SlideInOnLoad {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.intro__resume {
+  font-size: 1.25em;
+  margin-top: 10px;
 }
 
-@keyframes SlideInOnLoad {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.intro__resume .emoji {
+  width: 1em;
 }
 
 .section {
@@ -215,6 +168,10 @@ a:hover {
   margin-bottom: 25px;
 }
 
+.about {
+  padding-bottom: 150px;
+}
+
 .skills {
   font-size: 1em;
   font-weight: 300;
@@ -238,15 +195,6 @@ a:hover {
 
 .skills__category ul li {
   line-height: 2em;
-}
-
-.resume {
-  font-size: 0.875em;
-  margin-top: 10px;
-}
-
-.resume .emoji {
-  width: 1em;
 }
 
 .project {
@@ -381,6 +329,70 @@ a:hover {
 @media screen and (max-width: 600px) {
   body {
     font-size: 10px;
+  }
+}
+
+@-webkit-keyframes SlideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes Bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes Bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

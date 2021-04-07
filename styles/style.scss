@@ -19,6 +19,7 @@ a:hover {
   top: 1.875em;
   right: 3em;
   cursor: pointer;
+
   &__img {
     width: 3.25em;
     height: auto;
@@ -38,8 +39,9 @@ a:hover {
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
+
   &:touch-action {
-    aniamtion-name: Bounce;
+    animation-name: Bounce;
     animation-duration: 2s;
   }
 
@@ -48,21 +50,6 @@ a:hover {
     margin: auto;
     padding-top: 20px;
     width: 3em;
-  }
-}
-
-@keyframes Bounce {
-  0% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 
@@ -80,14 +67,13 @@ a:hover {
 
 .intro {
   font-size: 1em;
-  padding: 0 100px 0;
   max-width: 1440px;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  animation-name: SlideInOnLoad;
+  animation-name: SlideIn;
   animation-duration: 1s;
   animation-iteration-count: 1;
 
@@ -103,30 +89,34 @@ a:hover {
     font-weight: 400;
     margin: 0;
     margin-bottom: 10px;
+
     &--name {
       font-weight: 700;
     }
+
     .emoji {
       width: 1em;
     }
   }
+
   &__link {
     font-size: 1.25em;
     font-weight: 400;
     margin: 0;
+
     .emoji {
       width: 1em;
       height: auto;
     }
   }
-}
 
-@keyframes SlideInOnLoad {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  &__resume {
+    font-size: 1.25em;
+    margin-top: 10px;
+
+    .emoji {
+      width: 1em;
+    }
   }
 }
 
@@ -137,16 +127,19 @@ a:hover {
   padding: 6.25em 0;
   display: flex;
   justify-content: center;
+
   &__title {
     font-weight: 700;
     flex-shrink: 0;
     width: 6.25em;
     margin-right: 2.5em;
   }
+
   &__content {
     font-weight: 300;
     width: 100%;
     max-width: 650px;
+
     p {
       margin-top: 0;
       margin-bottom: 25px;
@@ -154,16 +147,22 @@ a:hover {
   }
 }
 
+.about {
+  padding-bottom: 150px;
+}
+
 .skills {
   font-size: 1em;
   font-weight: 300;
   display: flex;
   justify-content: space-around;
+
   &__category {
     &--label {
       font-weight: 600;
       margin-bottom: 10px;
     }
+
     ul {
       list-style: none;
       padding: 0;
@@ -176,30 +175,26 @@ a:hover {
   }
 }
 
-.resume {
-  font-size: 0.875em;
-  margin-top: 10px;
-  .emoji {
-    width: 1em;
-  }
-}
-
 .project {
   display: flex;
   margin-bottom: 80px;
+
   &__picture {
     margin: 0;
     margin-right: 30px;
+
     img {
       width: 31.25em;
       height: auto;
     }
   }
+
   &__caption {
     &--name {
       font-weight: 600;
       margin-bottom: 15px;
     }
+
     &--description {
       font-weight: 300;
     }
@@ -209,12 +204,15 @@ a:hover {
 .more-projects {
   font-size: 1em;
   margin-bottom: 150px;
+
   .sub-project {
     margin-bottom: 50px;
+
     &__title {
       font-weight: 400;
       text-transform: capitalize;
     }
+
     &__date {
       font-weight: 300;
       font-style: italic;
@@ -230,6 +228,7 @@ a:hover {
 
     &__tags {
       display: flex;
+
       &--tag {
         font-weight: 600;
         font-size: 0.75em;
@@ -245,13 +244,16 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &__copyright {
     margin-left: 80px;
     margin-bottom: 30px;
+
     .emoji {
       width: 1em;
     }
   }
+
   &__links {
     width: 28.125em;
     display: flex;
@@ -280,6 +282,7 @@ a:hover {
   body {
     font-size: 12px;
   }
+
   #top-button {
     right: -2.125em;
   }
@@ -288,5 +291,35 @@ a:hover {
 @media screen and (max-width: 600px) {
   body {
     font-size: 10px;
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes Bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
