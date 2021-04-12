@@ -10,7 +10,7 @@ body {
 }
 
 a:hover {
-  color: #575757;
+  opacity: 0.5;
 }
 
 .toggle {
@@ -25,7 +25,7 @@ a:hover {
   height: auto;
 }
 
-#top-button {
+.topScrollButton {
   width: 150px;
   height: 90px;
   position: fixed;
@@ -34,7 +34,7 @@ a:hover {
   cursor: pointer;
 }
 
-#top-button:hover {
+.topScrollButton:hover {
   -webkit-animation-name: Bounce;
           animation-name: Bounce;
   -webkit-animation-duration: 2s;
@@ -43,14 +43,14 @@ a:hover {
           animation-iteration-count: infinite;
 }
 
-#top-button:touch-action {
+.topScrollButton:touch-action {
   -webkit-animation-name: Bounce;
           animation-name: Bounce;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
 
-#top-button .emoji {
+.topScrollButton__emoji {
   display: block;
   margin: auto;
   padding-top: 20px;
@@ -86,6 +86,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  padding: 0 9.375rem;
   -webkit-animation-name: SlideIn;
           animation-name: SlideIn;
   -webkit-animation-duration: 1s;
@@ -112,8 +113,10 @@ a:hover {
   font-weight: 700;
 }
 
-.intro__description .emoji {
+.intro__description--emoji {
   width: 1em;
+  position: relative;
+  top: 0.4375rem;
 }
 
 .intro__link {
@@ -122,18 +125,9 @@ a:hover {
   margin: 0;
 }
 
-.intro__link .emoji {
-  width: 1em;
-  height: auto;
-}
-
-.intro__resume {
-  font-size: 1.25em;
-  margin-top: 10px;
-}
-
-.intro__resume .emoji {
-  width: 1em;
+.intro__link--highlight {
+  padding: 0 5px;
+  text-decoration: none;
 }
 
 .section {
@@ -169,7 +163,7 @@ a:hover {
 }
 
 .about {
-  padding-bottom: 150px;
+  padding-bottom: 9.375rem;
 }
 
 .skills {
@@ -281,7 +275,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.footer__copyright .emoji {
+.footer__copyright--emoji {
   width: 1em;
 }
 
@@ -315,21 +309,6 @@ a:hover {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 12px;
-  }
-  #top-button {
-    right: -2.125em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 10px;
-  }
 }
 
 @-webkit-keyframes SlideIn {
@@ -393,6 +372,15 @@ a:hover {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+  #top-button {
+    right: -2.125em;
   }
 }
 /*# sourceMappingURL=style.css.map */

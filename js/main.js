@@ -47,7 +47,7 @@ faders.forEach((fader) => {
 });
 
 // Hide Scroll to Top Button when it's on top
-const topBtn = document.querySelector("#top-button");
+const topBtn = document.querySelector(".topScrollButton");
 
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > 0) {

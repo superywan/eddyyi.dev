@@ -1,5 +1,7 @@
-$light-background: rgb(231, 231, 231);
+$light-background: rgb(255, 255, 255);
 $light-font: #000;
+$sub-project-color: rgb(101, 102, 20);
+
 body {
   color: $light-font;
   background: $light-background;
@@ -9,11 +11,19 @@ a {
   color: $light-font;
 }
 
+.intro {
+  &__link {
+    &--highlight {
+      background: rgb(237, 240, 73);
+    }
+  }
+}
+
 .sub-project {
   &__tags {
     &--tag {
-      color: rgb(0, 96, 192);
-      border: 2px solid rgb(0, 96, 192);
+      color: $sub-project-color;
+      border: 2px solid $sub-project-color;
     }
   }
 }

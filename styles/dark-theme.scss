@@ -1,5 +1,7 @@
-$dark-background: rgb(34, 34, 34);
+$dark-background: rgb(0, 0, 0);
 $dark-font: #fff;
+$sub-project-color: rgb(99, 137, 175);
+
 body {
   color: $dark-font;
   background: $dark-background;
@@ -9,11 +11,19 @@ a {
   color: $dark-font;
 }
 
+.intro {
+  &__link {
+    &--highlight {
+      background: rgb(26, 63, 100);
+    }
+  }
+}
+
 .sub-project {
   &__tags {
     &--tag {
-      color: rgb(92, 139, 185);
-      border: 2px solid rgb(92, 139, 185);
+      color: $sub-project-color;
+      border: 2px solid $sub-project-color;
     }
   }
 }

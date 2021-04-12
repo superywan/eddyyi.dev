@@ -11,9 +11,10 @@ body {
 }
 
 a:hover {
-  color: rgb(87, 87, 87);
+  opacity: 0.5;
 }
 
+// --------Dark Mode Toggle (Moon Emoji)--------
 .toggle {
   position: absolute;
   top: 1.875em;
@@ -26,7 +27,8 @@ a:hover {
   }
 }
 
-#top-button {
+// --------Scroll to Top Button (Finger Pointing Up Emoji)--------
+.topScrollButton {
   width: 150px;
   height: 90px;
   position: fixed;
@@ -45,7 +47,7 @@ a:hover {
     animation-duration: 2s;
   }
 
-  .emoji {
+  &__emoji {
     display: block;
     margin: auto;
     padding-top: 20px;
@@ -53,6 +55,7 @@ a:hover {
   }
 }
 
+// Classes for JS : when the user is on top of page not show top scroll button
 .show {
   visibility: visible;
   opacity: 1;
@@ -65,6 +68,7 @@ a:hover {
   transition: opacity 250ms ease-out;
 }
 
+// --------Intro Section--------
 .intro {
   font-size: 1em;
   max-width: 1440px;
@@ -73,6 +77,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  padding: 0 9.375rem;
   animation-name: SlideIn;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -94,8 +99,10 @@ a:hover {
       font-weight: 700;
     }
 
-    .emoji {
+    &--emoji {
       width: 1em;
+      position: relative;
+      top: 0.4375rem;
     }
   }
 
@@ -104,22 +111,14 @@ a:hover {
     font-weight: 400;
     margin: 0;
 
-    .emoji {
-      width: 1em;
-      height: auto;
-    }
-  }
-
-  &__resume {
-    font-size: 1.25em;
-    margin-top: 10px;
-
-    .emoji {
-      width: 1em;
+    &--highlight {
+      padding: 0 5px;
+      text-decoration: none;
     }
   }
 }
 
+// --------Sections (About, Skills, Projects, More Project)--------
 .section {
   font-size: 1em;
   width: 80%;
@@ -147,10 +146,12 @@ a:hover {
   }
 }
 
+// --------About Section--------
 .about {
-  padding-bottom: 150px;
+  padding-bottom: 9.375rem;
 }
 
+// --------Skills Section--------
 .skills {
   font-size: 1em;
   font-weight: 300;
@@ -175,6 +176,7 @@ a:hover {
   }
 }
 
+// --------Project Section--------
 .project {
   display: flex;
   margin-bottom: 80px;
@@ -201,6 +203,7 @@ a:hover {
   }
 }
 
+// --------More Projects Section--------
 .more-projects {
   font-size: 1em;
   margin-bottom: 150px;
@@ -240,6 +243,7 @@ a:hover {
   }
 }
 
+// --------Footer--------
 .footer {
   display: flex;
   justify-content: space-between;
@@ -249,7 +253,7 @@ a:hover {
     margin-left: 80px;
     margin-bottom: 30px;
 
-    .emoji {
+    &--emoji {
       width: 1em;
     }
   }
@@ -267,6 +271,7 @@ a:hover {
   }
 }
 
+// --------Effects For this website--------
 .fade-in {
   opacity: 0;
   transform: translateY(5%);
@@ -276,22 +281,6 @@ a:hover {
 .fade-in.appear {
   opacity: 1;
   transform: translateY(0);
-}
-
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 12px;
-  }
-
-  #top-button {
-    right: -2.125em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 10px;
-  }
 }
 
 @keyframes SlideIn {
@@ -322,4 +311,18 @@ a:hover {
   100% {
     transform: translateY(0);
   }
+}
+
+// --------Media Queries--------
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+
+  #top-button {
+    right: -2.125em;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
