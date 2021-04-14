@@ -237,7 +237,7 @@ a:hover {
         font-size: 0.75em;
         margin-right: 10px;
         padding: 3px 10px;
-        border-radius: 10px;
+        border-radius: 7px;
       }
     }
   }
@@ -325,4 +325,73 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .topScrollButton {
+    width: 2em;
+  }
+
+  .intro {
+    font-size: 0.8em;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .section {
+    font-size: 1.5em;
+    flex-direction: column;
+    padding: 4em 0;
+
+    &__title {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 1.875em;
+    }
+  }
+
+  .skills {
+    flex-direction: column;
+
+    &__category {
+      margin-bottom: 1.875em;
+
+      ul {
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: circle;
+
+        li {
+          margin-left: 1.25em;
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .project {
+    flex-direction: column-reverse;
+
+    &__picture {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    font-size: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 1.875em;
+
+    &__copyright {
+      margin: 0;
+    }
+
+    &__links {
+      margin: 0;
+      margin-bottom: 1.25em;
+    }
+  }
 }

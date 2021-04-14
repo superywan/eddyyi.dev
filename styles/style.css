@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 html {
   scroll-behavior: smooth;
-  overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -255,7 +255,7 @@ a:hover {
   font-size: 0.75em;
   margin-right: 10px;
   padding: 3px 10px;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .footer {
@@ -381,6 +381,81 @@ a:hover {
   }
   #top-button {
     right: -2.125em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topScrollButton {
+    width: 2em;
+  }
+  .intro {
+    font-size: 0.8em;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .section {
+    font-size: 1.5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4em 0;
+  }
+  .section__title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1.875em;
+  }
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills__category {
+    margin-bottom: 1.875em;
+  }
+  .skills__category ul {
+    font-size: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: circle;
+  }
+  .skills__category ul li {
+    margin-left: 1.25em;
+    width: 40%;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .project__picture img {
+    width: 100%;
+  }
+  .footer {
+    font-size: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.875em;
+  }
+  .footer__copyright {
+    margin: 0;
+  }
+  .footer__links {
+    margin: 0;
+    margin-bottom: 1.25em;
   }
 }
 /*# sourceMappingURL=style.css.map */
