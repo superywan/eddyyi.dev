@@ -379,6 +379,20 @@ a:hover {
     }
   }
 
+  .more-projects {
+    margin-bottom: 0;
+  }
+
+  .sub-project__tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--tag {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+  }
+
   .footer {
     font-size: 1rem;
     flex-direction: column-reverse;
@@ -390,6 +404,7 @@ a:hover {
     }
 
     &__links {
+      width: 80%;
       margin: 0;
       margin-bottom: 1.25em;
     }
