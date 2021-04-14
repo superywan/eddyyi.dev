@@ -395,6 +395,11 @@ a:hover {
     margin: 0 auto;
     padding: 0;
   }
+  .intro__link {
+    padding: 0;
+    margin-top: 3em;
+    font-size: 2em;
+  }
   .section {
     font-size: 1.5em;
     -webkit-box-orient: vertical;
@@ -404,7 +409,6 @@ a:hover {
     padding: 4em 0;
   }
   .section__title {
-    width: 100%;
     margin: 0;
     margin-bottom: 1.875em;
   }
