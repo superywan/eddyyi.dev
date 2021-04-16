@@ -477,4 +477,9 @@ a:hover {
     margin-bottom: 1.25em;
   }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
 /*# sourceMappingURL=style.css.map */

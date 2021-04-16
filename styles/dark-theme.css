@@ -15,4 +15,9 @@ a {
   color: #6389af;
   border: 2px solid #6389af;
 }
+
+/* Scrollbar Color */
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+}
 /*# sourceMappingURL=dark-theme.css.map */
