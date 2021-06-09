@@ -1,338 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/favicon.ico?" type="image/x-icon" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/light-theme.css" id="theme-link" />
-    <title>Eddy Yi</title>
-  </head>
-  <body>
-    <div class="toggle">
-      <img
-        src="./img/emojis/full-moon-face_1f31d.png"
-        alt="sun emoji"
-        class="toggle__img"
-      />
-    </div>
-    <div class="topScrollButton hide">
-      <img
-        class="topScrollButton__emoji"
-        src="./img/emojis/index-pointing-up_261d-fe0f.png"
-        alt="finger pointing up emoji"
-      />
-    </div>
-    <main>
-      <header class="intro">
-        <h1 class="intro__title">Hello!</h1>
-        <h2 class="intro__description">
-          I’m <span class="intro__description--name">Eddy Yi</span>, a
-          self-taught
-          <div>
-            full-stack software engineer based in Ansung, Korea
-            <img
-              class="intro__description--emoji"
-              src="./img/emojis/flag-south-korea_1f1f0-1f1f7.png"
-              alt="south korea flag emoji"
-            />
-          </div>
-        </h2>
-        <h3 class="intro__link">
-          Get in touch
-          <a
-            href="mailto:superywan@gmail.com"
-            target="_blank"
-            class="intro__link--highlight"
-            >superywan@gmail.com</a
-          >
-          and
-          <a href="" class="intro__link--highlight">View My Resume </a>
-        </h3>
-      </header>
-      <section class="section about fade-in">
-        <div class="section__title">About Me</div>
-        <div class="section__content">
-          <p>
-            I’m currently a full-time learner, seeking to pursue a goal to
-            become a full-stack developer. I recently graduated from Santa
-            Monica College after an awesome experience as an international
-            student studying abroad.
-          </p>
-          <p>
-            As a developer, I find programming as a tool where I express my
-            desire for creating something new that people can have fun with it.
-            I spend most of the time studying to become a better developer than
-            yesterday.
-          </p>
-          <p>
-            When I’m not in front of a computer screen, I’m probably having a
-            good time with family empty my head or reading a book enjoying a cup
-            of coffee with a cat on my lap.
-          </p>
-        </div>
-      </section>
-      <section class="section skill fade-in">
-        <div class="section__title">Skills<br /></div>
-        <div class="section__content">
-          <div class="skills">
-            <div class="skills__category">
-              <div class="skills__category--label">Languages</div>
-              <ul>
-                <li>Java</li>
-                <li>HTML5</li>
-                <li>JavaScript (ES6)</li>
-                <li>CSS (Scss)</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-            <div class="skills__category">
-              <div class="skills__category--label">
-                Frameworks<br />& Libraries
-              </div>
-              <ul>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Sass</li>
-              </ul>
-            </div>
-            <div class="skills__category">
-              <div class="skills__category--label">Tools</div>
-              <ul>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-                <li>Postman</li>
-                <li>Git & Github</li>
-                <li>VS Code / Vim</li>
-              </ul>
-            </div>
-            <div class="skills__category last">
-              <div class="skills__category--label">Design</div>
-              <ul>
-                <li>Figma</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section projects fade-in">
-        <div class="section__title">Projects</div>
-        <div class="section__content">
-          <div class="project">
-            <figure class="project__picture">
-              <a href="https://github.com/superywan/Amazonia"
-                ><img
-                  src="./img/projects/amazonClone.png"
-                  alt="clone coding of amazon.com"
-              /></a>
-            </figure>
-            <figcaption class="project__caption">
-              <div class="project__caption--name">Amazonia</div>
-              <p>
-                A RESTful E-commerce Website Design Inspired From Amazon.com
-              </p>
-            </figcaption>
-          </div>
-          <div class="project">
-            <figure class="project__picture">
-              <a href="https://github.com/superywan/SimpleCalculator"
-                ><img
-                  src="./img/projects/simplecalculator.gif"
-                  alt="todo list with react js"
-              /></a>
-            </figure>
-            <figcaption class="project__caption">
-              <div class="project__caption--name">Simple Calculator</div>
-              <p>Vanilla JavaScript Simple Calculator with LocalStorge</p>
-            </figcaption>
-          </div>
-          <div class="project">
-            <figure class="project__picture">
-              <a href="https://github.com/superywan/momentum-JS"
-                ><img
-                  src="./img/projects/momentumClone.png"
-                  alt="clone coding of momentum js with david hockney picture"
-              /></a>
-            </figure>
-            <figcaption class="project__caption">
-              <div class="project__caption--name">Momentum JS</div>
-              <p>
-                Clone Coding of Momentum Chrome Application only vanila JS with
-                Weather API and David Hockney's paintings as background
-              </p>
-            </figcaption>
-          </div>
-          <div class="project">
-            <figure class="project__picture">
-              <a href="https://github.com/superywan/Fakebook"
-                ><img
-                  src="./img/projects/fakebook.png"
-                  alt="clone coding of facebook login page"
-              /></a>
-            </figure>
-            <figcaption class="project__caption">
-              <div class="project__caption--name">Fakebook</div>
-              <p class="project__caption--description">
-                Functional Clone Coding of Facebook Login and Resister Page with
-                Pure PHP
-              </p>
-            </figcaption>
-          </div>
-          <div class="project">
-            <figure class="project__picture">
-              <a href="https://github.com/superywan/SimpleTodo"
-                ><img
-                  src="./img/projects/todolistReact.png"
-                  alt="todo list with react js"
-              /></a>
-            </figure>
-            <figcaption class="project__caption">
-              <div class="project__caption--name">Simple Todo</div>
-              <p>
-                Simple To Do List Application using React.js with ReactDOM,
-                React Route
-              </p>
-            </figcaption>
-          </div>
-        </div>
-      </section>
-      <section class="section more-projects fade-in">
-        <div class="section__title">More Projects</div>
-        <div class="section__content">
-          <div class="sub-project">
-            <div class="sub-project__title">
-              <a href="https://superywan.github.io/react-tic-tac-toe/"
-                >Tic Tac Toe</a
-              >
-            </div>
-            <div class="sub-project__date">March 28, 2021</div>
-            <p class="sub-project__description">
-              Tic-Tac-Toe React Project with additional improvements from
-              React.js official tutorial
-            </p>
-            <div class="sub-project__tags">
-              <span class="sub-project__tags--tag">HTML</span>
-              <span class="sub-project__tags--tag">CSS</span>
-              <span class="sub-project__tags--tag">React</span>
-            </div>
-          </div>
-          <div class="sub-project">
-            <div class="sub-project__title">
-              <a
-                href="https://github.com/superywan/ExerciseTracker_Microservice_API"
-                >ExerciseTracker_Microservice_API</a
-              >
-            </div>
-            <div class="sub-project__date">Feb 11, 2021</div>
-            <p class="sub-project__description">
-              A Exercies Tracker full stack app that tracks users exercie
-              history with Login Function and Search history by user ID
-            </p>
-            <div class="sub-project__tags">
-              <span class="sub-project__tags--tag">HTML</span>
-              <span class="sub-project__tags--tag">CSS</span>
-              <span class="sub-project__tags--tag">Node</span>
-              <span class="sub-project__tags--tag">Express</span>
-              <span class="sub-project__tags--tag">MongoDB</span>
-            </div>
-          </div>
-          <div class="sub-project">
-            <div class="sub-project__title">
-              <a
-                href="https://github.com/superywan/URLShortener_Microservice_API"
-                >URL Shortener Microservice API</a
-              >
-            </div>
-            <div class="sub-project__date">Feb 8, 2021</div>
-            <p class="sub-project__description">
-              A full stack JavaScript app that shorten URL using a body parsing
-              middleware
-            </p>
-            <div class="sub-project__tags">
-              <span class="sub-project__tags--tag">HTML</span>
-              <span class="sub-project__tags--tag">CSS</span>
-              <span class="sub-project__tags--tag">Node</span>
-              <span class="sub-project__tags--tag">Express</span>
-              <span class="sub-project__tags--tag">MongoDB</span>
-            </div>
-          </div>
-          <div class="sub-project">
-            <div class="sub-project__title">
-              <a href="https://github.com/superywan/coronaVSHumanity-JAVA"
-                >corona VS Humanity JAVA</a
-              >
-            </div>
-            <div class="sub-project__date">Jun 3, 2020</div>
-            <p class="sub-project__description">
-              JavaFX Covid-19 Themed Gallagy type of game with JavaFX
-            </p>
-            <div class="sub-project__tags">
-              <span class="sub-project__tags--tag">Java</span>
-              <span class="sub-project__tags--tag">JavaFX</span>
-            </div>
-          </div>
-          <div class="sub-project">
-            <div class="sub-project__title">
-              <a href="https://github.com/superywan/typingPractice-JS"
-                >typing Practice JS</a
-              >
-            </div>
-            <div class="sub-project__date">Mar 13, 2020</div>
-            <p class="sub-project__description">
-              Typing Practice with Vanilla JS (Asyncronus JS)
-            </p>
-            <div class="sub-project__tags">
-              <span class="sub-project__tags--tag">HTML</span>
-              <span class="sub-project__tags--tag">CSS</span>
-              <pan class="sub-project__tags--tag">JavaScript</pan>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__copyright">
-        Developed By Eddy Yi &copy;2021
-        <img
-          class="footer__copyright--emoji"
-          src="img/emojis/man-technologist-light-skin-tone_1f468-1f3fb-200d-1f4bb.png"
-          alt="man technologist emoji"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico?"
+            type="image/x-icon"
         />
-      </div>
-      <div class="footer__links">
-        <a
-          href="mailto:eddy@eddyyi.dev"
-          target="_blank"
-          class="footer__links--highlight"
-          target="_blank"
-          >EMAIL</a
-        >
-        <a
-          href="https://www.instagram.com/superywan/"
-          class="footer__links--highlight"
-          target="_blank"
-          >INSTAGRAM</a
-        >
-        <a
-          href="https://github.com/superywan"
-          class="footer__links--highlight"
-          target="_blank"
-          >GITHUB</a
-        >
-        <a
-          href="https://www.linkedin.com/in/eddy-yi-99a4221b7/"
-          class="footer__links--highlight"
-          target="_blank"
-          >LINKEDIN</a
-        >
-      </div>
-    </footer>
+        <meta property="og:image" content="./img/preview/preview.png" />
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="./styles/light-theme.css"
+            id="theme-link"
+        />
+        <title>Eddy Yi</title>
+    </head>
+    <body>
+        <div class="toggle">
+            <img
+                src="./img/emojis/full-moon-face_1f31d.png"
+                alt="sun emoji"
+                class="toggle__img"
+            />
+        </div>
+        <div class="topScrollButton hide">
+            <img
+                class="topScrollButton__emoji"
+                src="./img/emojis/index-pointing-up_261d-fe0f.png"
+                alt="finger pointing up emoji"
+            />
+        </div>
+        <main>
+            <header class="intro">
+                <h1 class="intro__title">Hello!</h1>
+                <h2 class="intro__description">
+                    I’m <span class="intro__description--name">Eddy Yi</span>, a
+                    self-taught
+                    <div>
+                        full-stack software engineer based in Ansung, Korea
+                        <img
+                            class="intro__description--emoji"
+                            src="./img/emojis/flag-south-korea_1f1f0-1f1f7.png"
+                            alt="south korea flag emoji"
+                        />
+                    </div>
+                </h2>
+                <h3 class="intro__link">
+                    Get in touch
+                    <a
+                        href="mailto:superywan@gmail.com"
+                        target="_blank"
+                        class="intro__link--highlight"
+                        >superywan@gmail.com</a
+                    >
+                    and
+                    <a href="" class="intro__link--highlight"
+                        >View My Resume
+                    </a>
+                </h3>
+            </header>
+            <section class="section about fade-in">
+                <div class="section__title">About Me</div>
+                <div class="section__content">
+                    <p>
+                        I’m currently a full-time learner, seeking to pursue a
+                        goal to become a full-stack developer. I recently
+                        graduated from Santa Monica College after an awesome
+                        experience as an international student studying abroad.
+                    </p>
+                    <p>
+                        As a developer, I find programming as a tool where I
+                        express my desire for creating something new that people
+                        can have fun with it. I spend most of the time studying
+                        to become a better developer than yesterday.
+                    </p>
+                    <p>
+                        When I’m not in front of a computer screen, I’m probably
+                        having a good time with family empty my head or reading
+                        a book enjoying a cup of coffee with a cat on my lap.
+                    </p>
+                </div>
+            </section>
+            <section class="section skill fade-in">
+                <div class="section__title">Skills<br /></div>
+                <div class="section__content">
+                    <div class="skills">
+                        <div class="skills__category">
+                            <div class="skills__category--label">Languages</div>
+                            <ul>
+                                <li>Java</li>
+                                <li>HTML5</li>
+                                <li>JavaScript (ES6)</li>
+                                <li>CSS (Scss)</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="skills__category">
+                            <div class="skills__category--label">
+                                Frameworks<br />& Libraries
+                            </div>
+                            <ul>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Sass</li>
+                            </ul>
+                        </div>
+                        <div class="skills__category">
+                            <div class="skills__category--label">Tools</div>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                                <li>Postman</li>
+                                <li>Git & Github</li>
+                                <li>VS Code / Vim</li>
+                            </ul>
+                        </div>
+                        <div class="skills__category last">
+                            <div class="skills__category--label">Design</div>
+                            <ul>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section projects fade-in">
+                <div class="section__title">Projects</div>
+                <div class="section__content">
+                    <div class="project">
+                        <figure class="project__picture">
+                            <a href="https://github.com/superywan/Amazonia"
+                                ><img
+                                    src="./img/projects/amazonia.png"
+                                    alt="clone coding of amazon.com"
+                            /></a>
+                        </figure>
+                        <figcaption class="project__caption">
+                            <div class="project__caption--name">Amazonia</div>
+                            <p>
+                                A RESTful E-commerce Website Design Inspired
+                                From Amazon.com
+                            </p>
+                        </figcaption>
+                    </div>
+                    <div class="project">
+                        <figure class="project__picture">
+                            <a href="https://github.com/superywan/Pigeon"
+                                ><img
+                                    src="./img/projects/pigeon.png"
+                                    alt="pigeon app image"
+                            /></a>
+                        </figure>
+                        <figcaption class="project__caption">
+                            <div class="project__caption--name">Pigeon</div>
+                            <p>
+                                Simple twitter-like app with PERRN stack hosted
+                                on Heroku
+                            </p>
+                        </figcaption>
+                    </div>
+                    <div class="project">
+                        <figure class="project__picture">
+                            <a href="https://github.com/superywan/Fakebook"
+                                ><img
+                                    src="./img/projects/fakebook.png"
+                                    alt="clone coding of facebook login page"
+                            /></a>
+                        </figure>
+                        <figcaption class="project__caption">
+                            <div class="project__caption--name">Fakebook</div>
+                            <p class="project__caption--description">
+                                Functional Clone Coding of Facebook Login and
+                                Resister Page with Pure PHP
+                            </p>
+                        </figcaption>
+                    </div>
+                </div>
+            </section>
+            <section class="section more-projects fade-in">
+                <div class="section__title">More Projects</div>
+                <div class="section__content">
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a href="https://github.com/superywan/SimpleTodo"
+                                >Simple Todo List</a
+                            >
+                        </div>
+                        <div class="sub-project__date">April 2, 2021</div>
+                        <p class="sub-project__description">
+                            Simple React To-do List
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">HTML</span>
+                            <span class="sub-project__tags--tag">CSS</span>
+                            <span class="sub-project__tags--tag">JS</span>
+                            <span class="sub-project__tags--tag">React</span>
+                            <span class="sub-project__tags--tag"
+                                >React-Router</span
+                            >
+                        </div>
+                    </div>
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a href="https://github.com/superywan/momentum-JS"
+                                >Momentum JS</a
+                            >
+                        </div>
+                        <div class="sub-project__date">April 14, 2020</div>
+                        <p class="sub-project__description">
+                            Clone Coding of Momentum Chrome Application
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">HTML</span>
+                            <span class="sub-project__tags--tag">CSS</span>
+                            <span class="sub-project__tags--tag">JS</span>
+                        </div>
+                    </div>
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a
+                                href="https://github.com/superywan/SimpleCalculator"
+                                >Simple Calculator</a
+                            >
+                        </div>
+                        <div class="sub-project__date">Jun 13, 2020</div>
+                        <p class="sub-project__description">
+                            Responsive Calculator With Vanilla JS
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">HTML</span>
+                            <span class="sub-project__tags--tag">CSS</span>
+                            <span class="sub-project__tags--tag">JS</span>
+                        </div>
+                    </div>
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a
+                                href="https://superywan.github.io/react-tic-tac-toe/"
+                                >Tic Tac Toe</a
+                            >
+                        </div>
+                        <div class="sub-project__date">March 28, 2021</div>
+                        <p class="sub-project__description">
+                            Tic-Tac-Toe React Project with additional
+                            improvements from React.js official tutorial
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">HTML</span>
+                            <span class="sub-project__tags--tag">CSS</span>
+                            <span class="sub-project__tags--tag">JS</span>
+                            <span class="sub-project__tags--tag">React</span>
+                        </div>
+                    </div>
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a
+                                href="https://github.com/superywan/ExerciseTracker_Microservice_API"
+                                >ExerciseTracker_Microservice_API</a
+                            >
+                        </div>
+                        <div class="sub-project__date">Feb 11, 2021</div>
+                        <p class="sub-project__description">
+                            A Exercies Tracker full stack app that tracks users
+                            exercie history with Login Function and Search
+                            history by user ID
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">HTML</span>
+                            <span class="sub-project__tags--tag">CSS</span>
+                            <span class="sub-project__tags--tag">JS</span>
+                            <span class="sub-project__tags--tag">Node</span>
+                            <span class="sub-project__tags--tag">Express</span>
+                            <span class="sub-project__tags--tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a
+                                href="https://github.com/superywan/URLShortener_Microservice_API"
+                                >URL Shortener Microservice API</a
+                            >
+                        </div>
+                        <div class="sub-project__date">Feb 8, 2021</div>
+                        <p class="sub-project__description">
+                            A full stack JavaScript app that shorten URL using a
+                            body parsing middleware
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">HTML</span>
+                            <span class="sub-project__tags--tag">CSS</span>
+                            <span class="sub-project__tags--tag">Node</span>
+                            <span class="sub-project__tags--tag">Express</span>
+                            <span class="sub-project__tags--tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a
+                                href="https://github.com/superywan/coronaVSHumanity-JAVA"
+                                >corona VS Humanity JAVA</a
+                            >
+                        </div>
+                        <div class="sub-project__date">Jun 3, 2020</div>
+                        <p class="sub-project__description">
+                            JavaFX Covid-19 Themed Gallagy type of game with
+                            JavaFX
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">Java</span>
+                            <span class="sub-project__tags--tag">JavaFX</span>
+                        </div>
+                    </div>
+                    <div class="sub-project">
+                        <div class="sub-project__title">
+                            <a
+                                href="https://github.com/superywan/typingPractice-JS"
+                                >typing Practice JS</a
+                            >
+                        </div>
+                        <div class="sub-project__date">Mar 13, 2020</div>
+                        <p class="sub-project__description">
+                            Typing Practice with Vanilla JS (Asyncronus JS)
+                        </p>
+                        <div class="sub-project__tags">
+                            <span class="sub-project__tags--tag">HTML</span>
+                            <span class="sub-project__tags--tag">CSS</span>
+                            <pan class="sub-project__tags--tag">JavaScript</pan>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright">
+                Developed By Eddy Yi &copy;2021
+                <img
+                    class="footer__copyright--emoji"
+                    src="img/emojis/man-technologist-light-skin-tone_1f468-1f3fb-200d-1f4bb.png"
+                    alt="man technologist emoji"
+                />
+            </div>
+            <div class="footer__links">
+                <a
+                    href="mailto:eddy@eddyyi.dev"
+                    target="_blank"
+                    class="footer__links--highlight"
+                    target="_blank"
+                    >EMAIL</a
+                >
+                <a
+                    href="https://www.instagram.com/superywan/"
+                    class="footer__links--highlight"
+                    target="_blank"
+                    >INSTAGRAM</a
+                >
+                <a
+                    href="https://github.com/superywan"
+                    class="footer__links--highlight"
+                    target="_blank"
+                    >GITHUB</a
+                >
+                <a
+                    href="https://www.linkedin.com/in/eddy-yi-99a4221b7/"
+                    class="footer__links--highlight"
+                    target="_blank"
+                    >LINKEDIN</a
+                >
+            </div>
+        </footer>
 
-    <script src="./js/main.js"></script>
-  </body>
+        <script src="./js/main.js"></script>
+    </body>
 </html>
